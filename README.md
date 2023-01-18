@@ -1,6 +1,12 @@
 # Genetic-Vehicle-Routing
 
-For my project I used the genetic algorithm to create a solution to the VRP that can not only be scaled to apply to larger sets of data but can also be customized to meet the requirements presented by unique constraints that arise when the solution is applied to real life situations. The genetic algorithm is a heuristic algorithm that utilizes the theory of natural selection to find the most fit solution to a problem within a given number of generations. When applied to the VRP each solution is considered a chromosome, representing the sequence of stops for each vehicle.
+For developers:
+
+This implementation loads package data and locations from a CSV file to a double hash table with 40 entries. To add additional entries please edit the double hash table file. The distances between the provided locations is provided by the distance table. In order to customize the solution for your use case please update all files with relevant information. To adjust delivery contstraints please see the generation file.
+
+About the project:
+
+This project uses a genetic algorithm to create a solution to the VRP that can not only be scaled to apply to larger sets of data but can also be customized to meet the requirements presented by unique constraints that arise when the solution is applied to real life situations. The genetic algorithm is a heuristic algorithm that utilizes the theory of natural selection to find the most fit solution to a problem within a given number of generations. When applied to the VRP each solution is considered a chromosome, representing the sequence of stops for each vehicle.
 
 The first-generation chromosomes are created by randomly generating a sequence value that represents the truck number the delivery is assigned to and the order in which the location will be visited by that truck. Each chromosome is then assessed a fitness value that consists of the distance traveled by each vehicle and penalty values added if any of the constraints placed on the deliveries are not met. The chromosomes are then ranked by fitness, a low fitness value indicating that the chromosome is a good fit for the problem. Subsequent generations are created by taking a percentage of the most fit chromosomes from the prior generation, creating a percentage of chromosomes from sequence value crossover of randomly selected parents from the previous generation, and a percentage of new chromosomes generated randomly. Through this natural selection process the route that is the most fit for the parameters provided will found.
 
