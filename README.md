@@ -2,7 +2,7 @@
 
 For developers:
 
-This implementation loads package data and locations from a CSV file to a double hash table with 40 entries. To add additional entries please edit the double hash table file. The distances between the provided locations is provided by the distance table. In order to customize the solution for your use case please update all files with relevant information. To adjust delivery contstraints please see the generation file.
+This implementation loads package data and locations from a CSV file to a double hash table with 40 entries. To add additional entries please edit the double hash table file. Distances between locations is provided by the distance table.cs file. In order to customize the solution for your use case please update all files with relevant information. To adjust delivery contstraints please see the generation file.
 
 About the project:
 
